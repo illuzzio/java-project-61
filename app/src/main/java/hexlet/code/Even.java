@@ -29,7 +29,6 @@ public class Even {
 
     public static int getRandomNumber() {
         Random random = new Random();
-        var randNum = random.nextInt(100);
-        return randNum;
+        return random.nextInt(100);
     }
 }
