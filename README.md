@@ -5,23 +5,34 @@
 This is the "Brain Games" project, which contains a set of five console games built on the principle of popular mobile applications for pumping up the brain.
 
 ## Start ##
-``` make 
+``` 
+make 
 ```
 
 ## Setup ##
-``` make build ```
+``` 
+make build
+```
 
 ## Run ##
-``` make run ```
+``` 
+make run
+```
 
 ## Run tests ##
-``` make test ```
+``` 
+make test 
+```
 
 ## Run checkstyle ##
-``` make lint ```
+``` 
+make lint 
+```
 
 ## Check update dependencies and plugins ##
-``` make update ```
+``` 
+make update 
+```
 
 ### Игра: "Проверка на чётность" ###
 https://asciinema.org/a/TU36cnhALz7Y4KOI4a51x90hX
