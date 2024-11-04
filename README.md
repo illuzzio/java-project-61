@@ -5,7 +5,8 @@
 This is the "Brain Games" project, which contains a set of five console games built on the principle of popular mobile applications for pumping up the brain.
 
 ## Start ##
-``` make ```
+``` make 
+```
 
 ## Setup ##
 ``` make build ```
