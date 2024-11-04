@@ -5,3 +5,6 @@
 
 ### Игра: "Проверка на чётность" ###
 https://asciinema.org/a/TU36cnhALz7Y4KOI4a51x90hX
+
+### Игра: "Калькулятор" ###
+https://asciinema.org/a/4KAwsGtsk7gu34AIdMRTGDlbi
