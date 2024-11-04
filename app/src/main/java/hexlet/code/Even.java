@@ -4,12 +4,12 @@ import java.util.Random;
 public class Even {
     public static void getEven() {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-
         var countCorrectAnswers = 0;
+
         while (countCorrectAnswers < 3) {
             var randNum = Even.getRandomNumber();
             System.out.print("Question: " + randNum + "\n");
-            System.out.print("Answer: ");
+            System.out.print("Your answer: ");
             var answer = Cli.getLine().toLowerCase();
             var correctAnswer = (randNum % 2 == 0) ? "yes" : "no";
 
@@ -21,6 +21,7 @@ public class Even {
                 break;
             }
         }
+
         if (countCorrectAnswers == 3) {
             System.out.println("Congratulations, " + Cli.name + "!");
         }
