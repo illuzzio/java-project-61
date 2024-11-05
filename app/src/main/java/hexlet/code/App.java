@@ -24,7 +24,7 @@ public class App {
                 break;
             case 4: // 4 - GCD ("Игра: Наибольший общий делитель")
                 Cli.getGreet();
-//                Gcd.getGcd();
+                Gcd.getGcd();
                 break;
             default:
                 System.out.println("Ops.. There is no option like " + startingChoice + " yet."); // Other...
