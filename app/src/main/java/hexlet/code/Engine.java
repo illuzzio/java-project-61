@@ -50,13 +50,20 @@ public class Engine {
     public static void congratulations(int countPoints) {
         if (countPoints == Engine.winnerPoints) {
             System.out.println(
-                    "\n  Congratulations, " + Cli.name + "! \n" +
-                    "                        .--.\n" +
-                    "                       |o_o |\n" +
-                    "                       |:_/ |\n" +
-                    "                      //   \\ \\\n" +
-                    "                     (|     | )\n" +
-                    "                    /'\\_   _/`\\\n" +
+                    "\n  Congratulations, " + Cli.name + "! \n"
+                            +
+                    "                        .--.\n"
+                            +
+                    "                       |o_o |\n"
+                            +
+                    "                       |:_/ |\n"
+                            +
+                    "                      //   \\ \\\n"
+                            +
+                    "                     (|     | )\n"
+                            +
+                    "                    /'\\_   _/`\\\n"
+                            +
                     "                    \\___)=(___/"
             );
         }
