@@ -22,9 +22,8 @@ public class Cli {
     }
 
     public static void getGreet() {
-        System.out.print("May I have your name? ");
+        System.out.print("Welcome to the 'Brain Games'!\nMay I have your name? ");
         name = getLine();
         System.out.println("Hello, " + name + "!");
-
     }
 }
