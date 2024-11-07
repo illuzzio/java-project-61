@@ -52,3 +52,6 @@ https://asciinema.org/a/KemtCwffnSORG0OpM95qkNUgo
 
 ### Игра: "Арифметическая прогрессия" ###
 https://asciinema.org/a/23ZnRBra7NFCZBfO9hDKU3vPn
+
+### Игра: "Простое число" ###
+https://asciinema.org/a/P2oHMcXh8LXqpun7Xzvk6G5WZ
