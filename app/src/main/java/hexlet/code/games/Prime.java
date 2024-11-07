@@ -12,12 +12,14 @@ public class Prime {
             System.out.print("Question: " + number + "\n");
             var result = (Engine.isPrime(number)) ? "yes" : "no";
             var correctAnswer = Engine.getGameResult(result);
+
             if (correctAnswer) {
                 countCorrectAnswers++;
             } else {
                 break;
             }
         }
+
         Engine.congratulations(countCorrectAnswers);
     }
 }

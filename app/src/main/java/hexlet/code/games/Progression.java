@@ -14,11 +14,13 @@ public class Progression {
             var progression = Engine.getRandNum2();
             var missItem = Engine.getRandNum2();
             progressionElements[0] = progressionElement;
+
             for (var i = 1; i < lengthProgression; i++) {
                 progressionElements[i] = progressionElements[i - 1] + progression;
             }
 
             var progressString = new StringBuilder();
+
             for (int i = 0; i < progressionElements.length; i++) {
                 if (i == missItem) {
                     progressString.append(".. ");
@@ -29,12 +31,14 @@ public class Progression {
             System.out.println("Question: " + progressString + " ");
 
             var correctAnswer = Engine.getGameResult(progressionElements[missItem]);
+
             if (correctAnswer) {
                 countCorrectAnswers++;
             } else {
                 break;
             }
         }
+
         Engine.congratulations(countCorrectAnswers);
     }
 }

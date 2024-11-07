@@ -26,6 +26,7 @@ public class Calc {
                 default: System.out.println("Lost operator?");
             }
             var correctAnswer = Engine.getGameResult(result);
+
             if (correctAnswer) {
                 countCorrectAnswers++;
             } else {

@@ -27,6 +27,7 @@ public class Engine {
     }
 
     public static int gcd(int num1, int num2) {
+
         if (num2 == 0) {
             return num1;
         }
@@ -66,6 +67,7 @@ public class Engine {
         if (number <= 1) {
             return false;
         }
+
         // проверяем делители от 2 до кв.корня из числа
         for (int i = 2; i < Math.sqrt(number); i++) {
             if (number % i == 0) {
@@ -76,6 +78,7 @@ public class Engine {
     }
 
     public static void congratulations(int countPoints) {
+
         if (countPoints == Engine.winnerPoints) {
             System.out.println(
                     "\n  Congratulations, " + Cli.name + "! \n"
