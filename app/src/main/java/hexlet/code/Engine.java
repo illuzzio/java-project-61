@@ -47,6 +47,34 @@ public class Engine {
         }
     }
 
+    public static boolean getGameResult(String result) {
+        System.out.print("Your answer: ");
+        var answer = Cli.getLine().toLowerCase();
+
+        if (result.equals(answer)) {
+            System.out.println("Correct!");
+            return true;
+        } else {
+            System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + result + "'.");
+            System.out.println("Let's try again, " + Cli.name + "!");
+            return false;
+        }
+    }
+
+    public static boolean isPrime(int number) {
+        // числа меньше 2 не являются простыми
+        if (number <= 1) {
+            return false;
+        }
+        // проверяем делители от 2 до кв.корня из числа
+        for (int i = 2; i < Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void congratulations(int countPoints) {
         if (countPoints == Engine.winnerPoints) {
             System.out.println(

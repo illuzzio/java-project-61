@@ -4,11 +4,12 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 public class App {
     public static void main(String[] args) {
         System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Progression\n0 - Exit");
+        System.out.println("1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
         System.out.print("Your choice: ");
         var startingChoice = Cli.getNum();
 
@@ -31,9 +32,13 @@ public class App {
                 Cli.getGreet();
                 Gcd.getGcd();
                 break;
-            case 5: // 5 - Progression ("Игра: ")
+            case 5: // 5 - Progression ("Игра: Арифметическая прогрессия")
                 Cli.getGreet();
                 Progression.getProgression();
+                break;
+            case 6: // 6 - Prime ("Игра: Простое число")
+                Cli.getGreet();
+                Prime.getPrime();
                 break;
             default:
                 System.out.println("Ops.. There is no option like " + startingChoice + " yet."); // Other...
