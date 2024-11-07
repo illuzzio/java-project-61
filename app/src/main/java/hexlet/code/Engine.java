@@ -2,21 +2,28 @@ package hexlet.code;
 import java.util.Random;
 
 public class Engine {
-    public static int winnerPoints = 3;
+    final static int winnerPoints = 3;
+    final static int oneHundredCount = 100;
+    final static int twentyCount = 20;
+    final static int tenCount = 10;
+
+    public static int getWinnerPoints() {
+        return winnerPoints;
+    }
 
     public static int getRandNum0() {
         Random random = new Random();
-        return random.nextInt(100);
+        return random.nextInt(oneHundredCount);
     }
 
     public static int getRandNum1() {
         Random random = new Random();
-        return random.nextInt(20) - 10;
+        return random.nextInt(twentyCount) - tenCount;
     }
 
     public static int getRandNum2() {
         Random random = new Random();
-        return random.nextInt(10);
+        return random.nextInt(tenCount);
     }
 
     public static String getOperator() {
@@ -43,7 +50,7 @@ public class Engine {
             return true;
         } else {
             System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + result + "'.");
-            System.out.println("Let's try again, " + Cli.name + "!");
+            System.out.println("Let's try again, " + Cli.getName() + "!");
             return false;
         }
     }
@@ -57,7 +64,7 @@ public class Engine {
             return true;
         } else {
             System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + result + "'.");
-            System.out.println("Let's try again, " + Cli.name + "!");
+            System.out.println("Let's try again, " + Cli.getName() + "!");
             return false;
         }
     }
@@ -81,7 +88,7 @@ public class Engine {
 
         if (countPoints == Engine.winnerPoints) {
             System.out.println(
-                    "\n  Congratulations, " + Cli.name + "! \n"
+                    "\n  Congratulations, " + Cli.getName() + "! \n"
                             +
                     "                        .--.\n"
                             +

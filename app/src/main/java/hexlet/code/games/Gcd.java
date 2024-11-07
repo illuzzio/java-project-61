@@ -7,7 +7,7 @@ public class Gcd {
         System.out.println("Find the greatest common divisor of given numbers.");
         var countCorrectAnswers = 0;
 
-        while (countCorrectAnswers < Engine.winnerPoints) {
+        while (countCorrectAnswers < Engine.getWinnerPoints()) {
             var num1 = Engine.getRandNum0();
             var num2 = Engine.getRandNum0();
             var result = Engine.gcd(num1, num2);

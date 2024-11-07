@@ -7,7 +7,7 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         var countCorrectAnswers = 0;
 
-        while (countCorrectAnswers < Engine.winnerPoints) {
+        while (countCorrectAnswers < Engine.getWinnerPoints()) {
             var randNum = Engine.getRandNum0();
             System.out.print("Question: " + randNum + "\n");
             var result = (randNum % 2 == 0) ? "yes" : "no";

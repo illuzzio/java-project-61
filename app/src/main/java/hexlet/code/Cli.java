@@ -2,18 +2,24 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Cli {
-    public static String name;
+    private static String name;
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String newName) {
+        name = newName;
+    }
 
     public static String getLine() {
         Scanner scanner = new Scanner(System.in);
-        String output = scanner.nextLine().trim();
-        return output;
+        return scanner.nextLine().trim();
     }
 
     public static int getNum() {
         Scanner scanner = new Scanner(System.in);
-        int output = scanner.nextInt();
-        return output;
+        return scanner.nextInt();
     }
 
     public static void closing() {
@@ -23,7 +29,7 @@ public class Cli {
 
     public static void getGreet() {
         System.out.print("Welcome to the 'Brain Games'!\nMay I have your name? ");
-        name = getLine();
-        System.out.println("Hello, " + name + "!");
+        setName(getLine());
+        System.out.println("Hello, " + getName() + "!");
     }
 }

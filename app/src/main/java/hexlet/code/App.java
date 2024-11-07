@@ -13,31 +13,38 @@ public class App {
         System.out.println("1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
         System.out.print("Your choice: ");
         var startingChoice = Cli.getNum();
+        final var choiceExit = 0;
+        final var choiceGreet = 1;
+        final var choiceEven = 2;
+        final var choiceCalc = 3;
+        final var choiceGcd = 4;
+        final var choiceProgression = 5;
+        final var choicePrime = 6;
 
         switch (startingChoice) {
-            case 0: // 0 - Exit
+            case choiceExit: // 0 - Exit
                 System.out.println("See ya! :)");
                 break;
-            case 1: // 1 - Greet
+            case choiceGreet: // 1 - Greet
                 Cli.getGreet();
                 break;
-            case 2: // 2 - Even ("Игра: Проверка на чётность")
+            case choiceEven: // 2 - Even ("Игра: Проверка на чётность")
                 Cli.getGreet();
                 Even.getEven();
                 break;
-            case 3: // 3 - Calc ("Игра: Калькулятор")
+            case choiceCalc: // 3 - Calc ("Игра: Калькулятор")
                 Cli.getGreet();
                 Calc.getCalc();
                 break;
-            case 4: // 4 - GCD ("Игра: Наибольший общий делитель")
+            case choiceGcd: // 4 - GCD ("Игра: Наибольший общий делитель")
                 Cli.getGreet();
                 Gcd.getGcd();
                 break;
-            case 5: // 5 - Progression ("Игра: Арифметическая прогрессия")
+            case choiceProgression: // 5 - Progression ("Игра: Арифметическая прогрессия")
                 Cli.getGreet();
                 Progression.getProgression();
                 break;
-            case 6: // 6 - Prime ("Игра: Простое число")
+            case choicePrime: // 6 - Prime ("Игра: Простое число")
                 Cli.getGreet();
                 Prime.getPrime();
                 break;

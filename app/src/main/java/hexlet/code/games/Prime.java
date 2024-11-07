@@ -7,7 +7,7 @@ public class Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         var countCorrectAnswers = 0;
 
-        while (countCorrectAnswers < Engine.winnerPoints) {
+        while (countCorrectAnswers < Engine.getWinnerPoints()) {
             var number = Engine.getRandNum0();
             System.out.print("Question: " + number + "\n");
             var result = (Engine.isPrime(number)) ? "yes" : "no";

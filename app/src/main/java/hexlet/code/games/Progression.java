@@ -6,9 +6,9 @@ public class Progression {
     public static void getProgression() {
         System.out.println("What number is missing in the progression?");
         var countCorrectAnswers = 0;
-        var lengthProgression = 10;
+        final var lengthProgression = 10;
 
-        while (countCorrectAnswers < Engine.winnerPoints) {
+        while (countCorrectAnswers < Engine.getWinnerPoints()) {
             var progressionElements = new Integer[lengthProgression];
             var progressionElement = Engine.getRandNum0();
             var progression = Engine.getRandNum2();

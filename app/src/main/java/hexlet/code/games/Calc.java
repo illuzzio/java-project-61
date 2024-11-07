@@ -7,7 +7,7 @@ public class Calc {
         System.out.println("What is the result of the expression?");
         var countCorrectAnswers = 0;
 
-        while (countCorrectAnswers < Engine.winnerPoints) {
+        while (countCorrectAnswers < Engine.getWinnerPoints()) {
             var firstNum = Engine.getRandNum1();
             var secondNum = Engine.getRandNum1();
             var operator = Engine.getOperator();
