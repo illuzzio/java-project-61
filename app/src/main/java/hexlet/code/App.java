@@ -33,7 +33,7 @@ public class App {
                 break;
             case 5: // 5 - Progression ("Игра: ")
                 Cli.getGreet();
-//                Progression.getProgression();
+                Progression.getProgression();
                 break;
             default:
                 System.out.println("Ops.. There is no option like " + startingChoice + " yet."); // Other...
