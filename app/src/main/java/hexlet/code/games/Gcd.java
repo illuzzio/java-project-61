@@ -8,8 +8,8 @@ public class Gcd {
         var countCorrectAnswers = 0;
 
         while (countCorrectAnswers < Engine.winnerPoints) {
-            var num1 = Engine.getRandomNumber();
-            var num2 = Engine.getRandomNumber();
+            var num1 = Engine.getRandNum0();
+            var num2 = Engine.getRandNum0();
             var result = Engine.gcd(num1, num2);
             System.out.println("Question: " + num1 + " " + num2 + " ");
             var correctAnswer = Engine.getGameResult(result);

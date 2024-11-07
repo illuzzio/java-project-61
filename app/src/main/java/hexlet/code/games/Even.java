@@ -9,7 +9,7 @@ public class Even {
         var countCorrectAnswers = 0;
 
         while (countCorrectAnswers < Engine.winnerPoints) {
-            var randNum = Engine.getRandomNumber();
+            var randNum = Engine.getRandNum0();
             System.out.print("Question: " + randNum + "\n");
             System.out.print("Your answer: ");
             var answer = Cli.getLine().toLowerCase();

@@ -9,7 +9,7 @@ public class Calc {
 
         while (countCorrectAnswers < Engine.winnerPoints) {
             var firstNum = Engine.getRandNum1();
-            var secondNum = Engine.getRandNum2();
+            var secondNum = Engine.getRandNum1();
             var operator = Engine.getOperator();
             var result = 0;
             System.out.println("Question: " + firstNum + " " + operator + " " + secondNum);

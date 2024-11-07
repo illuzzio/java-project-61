@@ -4,7 +4,7 @@ import java.util.Random;
 public class Engine {
     public static int winnerPoints = 3;
 
-    public static int getRandomNumber() {
+    public static int getRandNum0() {
         Random random = new Random();
         return random.nextInt(100);
     }
@@ -16,7 +16,7 @@ public class Engine {
 
     public static int getRandNum2() {
         Random random = new Random();
-        return random.nextInt(20) - 10;
+        return random.nextInt(10);
     }
 
     public static String getOperator() {
