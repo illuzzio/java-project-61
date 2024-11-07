@@ -2,34 +2,35 @@ package hexlet.code;
 import java.util.Random;
 
 public class Engine {
-    final static int winnerPoints = 3;
-    final static int oneHundredCount = 100;
-    final static int twentyCount = 20;
-    final static int tenCount = 10;
+    static final int WINNERPOINTS = 3;
+    static final int COUNT100 = 100;
+    static final int COUNT20 = 20;
+    static final int COUNT10 = 10;
+    static final int COUNT3 = 3;
 
     public static int getWinnerPoints() {
-        return winnerPoints;
+        return WINNERPOINTS;
     }
 
     public static int getRandNum0() {
         Random random = new Random();
-        return random.nextInt(oneHundredCount);
+        return random.nextInt(COUNT100);
     }
 
     public static int getRandNum1() {
         Random random = new Random();
-        return random.nextInt(twentyCount) - tenCount;
+        return random.nextInt(COUNT20) - COUNT10;
     }
 
     public static int getRandNum2() {
         Random random = new Random();
-        return random.nextInt(tenCount);
+        return random.nextInt(COUNT10);
     }
 
     public static String getOperator() {
         String[] operators = {"+", "-", "*"};
         Random random = new Random();
-        var i = random.nextInt(3);
+        var i = random.nextInt(COUNT3);
         return operators[i];
     }
 
@@ -86,7 +87,7 @@ public class Engine {
 
     public static void congratulations(int countPoints) {
 
-        if (countPoints == Engine.winnerPoints) {
+        if (countPoints == Engine.WINNERPOINTS) {
             System.out.println("Congratulations, " + Cli.getName() + "!");
         }
     }
