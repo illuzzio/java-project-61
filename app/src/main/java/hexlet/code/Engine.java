@@ -87,23 +87,7 @@ public class Engine {
     public static void congratulations(int countPoints) {
 
         if (countPoints == Engine.winnerPoints) {
-            System.out.println(
-                    "\n  Congratulations, " + Cli.getName() + "! \n"
-                            +
-                    "                        .--.\n"
-                            +
-                    "                       |o_o |\n"
-                            +
-                    "                       |:_/ |\n"
-                            +
-                    "                      //   \\ \\\n"
-                            +
-                    "                     (|     | )\n"
-                            +
-                    "                    /'\\_   _/`\\\n"
-                            +
-                    "                    \\___)=(___/"
-            );
+            System.out.println("Congratulations, " + Cli.getName() + "!");
         }
     }
 }
