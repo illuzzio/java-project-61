@@ -1,6 +1,5 @@
 package hexlet.code.games;
 
-import hexlet.code.Cli;
 import hexlet.code.Engine;
 
 public class Even {
@@ -11,15 +10,11 @@ public class Even {
         while (countCorrectAnswers < Engine.winnerPoints) {
             var randNum = Engine.getRandNum0();
             System.out.print("Question: " + randNum + "\n");
-            System.out.print("Your answer: ");
-            var answer = Cli.getLine().toLowerCase();
-            var correctAnswer = (randNum % 2 == 0) ? "yes" : "no";
-
-            if (answer.equals(correctAnswer)) {
+            var result = (randNum % 2 == 0) ? "yes" : "no";
+            var correctAnswer = Engine.getGameResult(result);
+            if (correctAnswer) {
                 countCorrectAnswers++;
-                System.out.println("Correct!");
             } else {
-                System.out.println("Let's try again, " + Cli.name + "!");
                 break;
             }
         }
