@@ -45,13 +45,13 @@ make update
 [![asciicast](https://asciinema.org/a/TU36cnhALz7Y4KOI4a51x90hX.svg)](https://asciinema.org/a/TU36cnhALz7Y4KOI4a51x90hX)
 
 ### Игра: "Калькулятор" ###
-https://asciinema.org/a/4KAwsGtsk7gu34AIdMRTGDlbi
+[![asciicast](https://asciinema.org/a/4KAwsGtsk7gu34AIdMRTGDlbi.svg)](https://asciinema.org/a/4KAwsGtsk7gu34AIdMRTGDlbi)
 
 ### Игра: "НОД" ###
-https://asciinema.org/a/KemtCwffnSORG0OpM95qkNUgo
+[![asciicast](https://asciinema.org/a/KemtCwffnSORG0OpM95qkNUgo.svg)](https://asciinema.org/a/KemtCwffnSORG0OpM95qkNUgo)
 
 ### Игра: "Арифметическая прогрессия" ###
-https://asciinema.org/a/23ZnRBra7NFCZBfO9hDKU3vPn
+[![asciicast](https://asciinema.org/a/23ZnRBra7NFCZBfO9hDKU3vPn.svg)](https://asciinema.org/a/23ZnRBra7NFCZBfO9hDKU3vPn)
 
 ### Игра: "Простое число" ###
-https://asciinema.org/a/P2oHMcXh8LXqpun7Xzvk6G5WZ
+[![asciicast](https://asciinema.org/a/P2oHMcXh8LXqpun7Xzvk6G5WZ.svg)](https://asciinema.org/a/P2oHMcXh8LXqpun7Xzvk6G5WZ)
